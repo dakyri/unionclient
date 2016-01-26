@@ -1,0 +1,321 @@
+/*
+ * UPC.cpp
+ *
+ *  Created on: Apr 10, 2014
+ *      Author: dak
+ */
+
+#include "UPC.h"
+
+/**
+ * @class UPC UPC.h
+ * wrapper class for constants for UPC comms
+ */
+const UPCMessageID UPC::ID::SEND_MESSAGE_TO_ROOMS = "u1";
+const UPCMessageID UPC::ID::SEND_MESSAGE_TO_CLIENTS = "u2";
+const UPCMessageID UPC::ID::SET_CLIENT_ATTR = "u3";
+const UPCMessageID UPC::ID::JOIN_ROOM = "u4";
+const UPCMessageID UPC::ID::SET_ROOM_ATTR = "u5";
+const UPCMessageID UPC::ID::JOINED_ROOM = "u6";
+const UPCMessageID UPC::ID::RECEIVE_MESSAGE = "u7";
+const UPCMessageID UPC::ID::CLIENT_ATTR_UPDATE = "u8";
+const UPCMessageID UPC::ID::ROOM_ATTR_UPDATE = "u9";
+const UPCMessageID UPC::ID::LEAVE_ROOM = "u10";
+const UPCMessageID UPC::ID::CREATE_ACCOUNT = "u11";
+const UPCMessageID UPC::ID::REMOVE_ACCOUNT = "u12";
+const UPCMessageID UPC::ID::CHANGE_ACCOUNT_PASSWORD = "u13";
+const UPCMessageID UPC::ID::LOGIN = "u14";
+const UPCMessageID UPC::ID::GET_CLIENTCOUNT_SNAPSHOT = "u18";
+const UPCMessageID UPC::ID::SYNC_TIME = "u19";
+const UPCMessageID UPC::ID::GET_ROOMLIST_SNAPSHOT = "u21";
+const UPCMessageID UPC::ID::CREATE_ROOM_RESULT = "u32";
+const UPCMessageID UPC::ID::STOP_WATCHING_FOR_ROOMS_RESULT = "u43";
+const UPCMessageID UPC::ID::CREATE_ROOM = "u24";
+const UPCMessageID UPC::ID::REMOVE_ROOM = "u25";
+const UPCMessageID UPC::ID::CLIENT_METADATA = "u29";
+const UPCMessageID UPC::ID::WATCH_FOR_ROOMS = "u26";
+const UPCMessageID UPC::ID::STOP_WATCHING_FOR_ROOMS = "u27";
+const UPCMessageID UPC::ID::REMOVE_ROOM_RESULT = "u33";
+const UPCMessageID UPC::ID::CLIENTCOUNT_SNAPSHOT = "u34";
+const UPCMessageID UPC::ID::CLIENT_ADDED_TO_ROOM = "u36";
+const UPCMessageID UPC::ID::CLIENT_REMOVED_FROM_ROOM = "u37";
+const UPCMessageID UPC::ID::ROOMLIST_SNAPSHOT = "u38";
+const UPCMessageID UPC::ID::ROOM_ADDED = "u39";
+const UPCMessageID UPC::ID::ROOM_REMOVED = "u40";
+const UPCMessageID UPC::ID::WATCH_FOR_ROOMS_RESULT = "u42";
+const UPCMessageID UPC::ID::LEFT_ROOM = "u44";
+const UPCMessageID UPC::ID::CHANGE_ACCOUNT_PASSWORD_RESULT = "u46";
+const UPCMessageID UPC::ID::CREATE_ACCOUNT_RESULT = "u47";
+const UPCMessageID UPC::ID::REMOVE_ACCOUNT_RESULT = "u48";
+const UPCMessageID UPC::ID::LOGIN_RESULT = "u49";
+const UPCMessageID UPC::ID::SERVER_TIME_UPDATE = "u50";
+const UPCMessageID UPC::ID::ROOM_SNAPSHOT = "u54";
+const UPCMessageID UPC::ID::GET_ROOM_SNAPSHOT = "u55";
+const UPCMessageID UPC::ID::SEND_MESSAGE_TO_SERVER = "u57";
+const UPCMessageID UPC::ID::OBSERVE_ROOM = "u58";
+const UPCMessageID UPC::ID::OBSERVED_ROOM = "u59";
+const UPCMessageID UPC::ID::GET_ROOM_SNAPSHOT_RESULT = "u60";
+const UPCMessageID UPC::ID::STOP_OBSERVING_ROOM = "u61";
+const UPCMessageID UPC::ID::STOPPED_OBSERVING_ROOM = "u62";
+const UPCMessageID UPC::ID::CLIENT_READY = "u63";
+const UPCMessageID UPC::ID::SET_ROOM_UPDATE_LEVELS = "u64";
+const UPCMessageID UPC::ID::CLIENT_HELLO = "u65";
+const UPCMessageID UPC::ID::SERVER_HELLO = "u66";
+const UPCMessageID UPC::ID::REMOVE_ROOM_ATTR = "u67";
+const UPCMessageID UPC::ID::REMOVE_CLIENT_ATTR = "u69";
+const UPCMessageID UPC::ID::SEND_ROOMMODULE_MESSAGE = "u70";
+const UPCMessageID UPC::ID::SEND_SERVERMODULE_MESSAGE = "u71";
+const UPCMessageID UPC::ID::JOIN_ROOM_RESULT = "u72";
+const UPCMessageID UPC::ID::SET_CLIENT_ATTR_RESULT = "u73";
+const UPCMessageID UPC::ID::SET_ROOM_ATTR_RESULT = "u74";
+const UPCMessageID UPC::ID::GET_CLIENTCOUNT_SNAPSHOT_RESULT = "u75";
+const UPCMessageID UPC::ID::LEAVE_ROOM_RESULT = "u76";
+const UPCMessageID UPC::ID::OBSERVE_ROOM_RESULT = "u77";
+const UPCMessageID UPC::ID::STOP_OBSERVING_ROOM_RESULT = "u78";
+const UPCMessageID UPC::ID::ROOM_ATTR_REMOVED = "u79";
+const UPCMessageID UPC::ID::REMOVE_ROOM_ATTR_RESULT = "u80";
+const UPCMessageID UPC::ID::CLIENT_ATTR_REMOVED = "u81";
+const UPCMessageID UPC::ID::REMOVE_CLIENT_ATTR_RESULT = "u82";
+const UPCMessageID UPC::ID::TERMINATE_SESSION = "u83";
+const UPCMessageID UPC::ID::SESSION_TERMINATED = "u84";
+const UPCMessageID UPC::ID::SESSION_NOT_FOUND = "u85";
+const UPCMessageID UPC::ID::LOGOFF = "u86";
+const UPCMessageID UPC::ID::LOGOFF_RESULT = "u87";
+const UPCMessageID UPC::ID::LOGGED_IN = "u88";
+const UPCMessageID UPC::ID::LOGGED_OFF = "u89";
+const UPCMessageID UPC::ID::ACCOUNT_PASSWORD_CHANGED = "u90";
+const UPCMessageID UPC::ID::GET_CLIENTLIST_SNAPSHOT = "u91";
+const UPCMessageID UPC::ID::WATCH_FOR_CLIENTS = "u92";
+const UPCMessageID UPC::ID::STOP_WATCHING_FOR_CLIENTS = "u93";
+const UPCMessageID UPC::ID::GET_CLIENT_SNAPSHOT = "u94";
+const UPCMessageID UPC::ID::OBSERVE_CLIENT = "u95";
+const UPCMessageID UPC::ID::STOP_OBSERVING_CLIENT = "u96";
+const UPCMessageID UPC::ID::GET_ACCOUNTLIST_SNAPSHOT = "u97";
+const UPCMessageID UPC::ID::WATCH_FOR_ACCOUNTS = "u98";
+const UPCMessageID UPC::ID::STOP_WATCHING_FOR_ACCOUNTS = "u99";
+const UPCMessageID UPC::ID::GET_ACCOUNT_SNAPSHOT = "u100";
+const UPCMessageID UPC::ID::CLIENTLIST_SNAPSHOT = "u101";
+const UPCMessageID UPC::ID::CLIENT_ADDED_TO_SERVER = "u102";
+const UPCMessageID UPC::ID::CLIENT_REMOVED_FROM_SERVER = "u103";
+const UPCMessageID UPC::ID::CLIENT_SNAPSHOT = "u104";
+const UPCMessageID UPC::ID::OBSERVE_CLIENT_RESULT = "u105";
+const UPCMessageID UPC::ID::STOP_OBSERVING_CLIENT_RESULT = "u106";
+const UPCMessageID UPC::ID::WATCH_FOR_CLIENTS_RESULT = "u107";
+const UPCMessageID UPC::ID::STOP_WATCHING_FOR_CLIENTS_RESULT = "u108";
+const UPCMessageID UPC::ID::WATCH_FOR_ACCOUNTS_RESULT = "u109";
+const UPCMessageID UPC::ID::STOP_WATCHING_FOR_ACCOUNTS_RESULT = "u110";
+const UPCMessageID UPC::ID::ACCOUNT_ADDED = "u111";
+const UPCMessageID UPC::ID::ACCOUNT_REMOVED = "u112";
+const UPCMessageID UPC::ID::JOINED_ROOM_ADDED_TO_CLIENT = "u113";
+const UPCMessageID UPC::ID::JOINED_ROOM_REMOVED_FROM_CLIENT = "u114";
+const UPCMessageID UPC::ID::GET_CLIENT_SNAPSHOT_RESULT = "u115";
+const UPCMessageID UPC::ID::GET_ACCOUNT_SNAPSHOT_RESULT = "u116";
+const UPCMessageID UPC::ID::OBSERVED_ROOM_ADDED_TO_CLIENT = "u117";
+const UPCMessageID UPC::ID::OBSERVED_ROOM_REMOVED_FROM_CLIENT = "u118";
+const UPCMessageID UPC::ID::CLIENT_OBSERVED = "u119";
+const UPCMessageID UPC::ID::OBSERVE_ACCOUNT = "u121";
+const UPCMessageID UPC::ID::STOP_OBSERVING_ACCOUNT = "u122";
+const UPCMessageID UPC::ID::STOPPED_OBSERVING_CLIENT = "u120";
+const UPCMessageID UPC::ID::OBSERVE_ACCOUNT_RESULT = "u123";
+const UPCMessageID UPC::ID::ACCOUNT_OBSERVED = "u124";
+const UPCMessageID UPC::ID::STOP_OBSERVING_ACCOUNT_RESULT = "u125";
+const UPCMessageID UPC::ID::STOPPED_OBSERVING_ACCOUNT = "u126";
+const UPCMessageID UPC::ID::ACCOUNT_LIST_UPDATE = "u127";
+const UPCMessageID UPC::ID::UPDATE_LEVELS_UPDATE = "u128";
+const UPCMessageID UPC::ID::CLIENT_OBSERVED_ROOM = "u129";
+const UPCMessageID UPC::ID::CLIENT_STOPPED_OBSERVING_ROOM = "u130";
+const UPCMessageID UPC::ID::ROOM_OCCUPANTCOUNT_UPDATE = "u131";
+const UPCMessageID UPC::ID::ROOM_OBSERVERCOUNT_UPDATE = "u132";
+const UPCMessageID UPC::ID::ADD_ROLE = "u133";
+const UPCMessageID UPC::ID::ADD_ROLE_RESULT = "u134";
+const UPCMessageID UPC::ID::REMOVE_ROLE = "u135";
+const UPCMessageID UPC::ID::REMOVE_ROLE_RESULT = "u136";
+const UPCMessageID UPC::ID::BAN = "u137";
+const UPCMessageID UPC::ID::BAN_RESULT = "u138";
+const UPCMessageID UPC::ID::UNBAN = "u139";
+const UPCMessageID UPC::ID::UNBAN_RESULT = "u140";
+const UPCMessageID UPC::ID::GET_BANNED_LIST_SNAPSHOT = "u141";
+const UPCMessageID UPC::ID::BANNED_LIST_SNAPSHOT = "u142";
+const UPCMessageID UPC::ID::WATCH_FOR_BANNED_ADDRESSES = "u143";
+const UPCMessageID UPC::ID::WATCH_FOR_BANNED_ADDRESSES_RESULT = "u144";
+const UPCMessageID UPC::ID::STOP_WATCHING_FOR_BANNED_ADDRESSES = "u145";
+const UPCMessageID UPC::ID::STOP_WATCHING_FOR_BANNED_ADDRESSES_RESULT = "u146";
+const UPCMessageID UPC::ID::BANNED_ADDRESS_ADDED = "u147";
+const UPCMessageID UPC::ID::BANNED_ADDRESS_REMOVED = "u148";
+const UPCMessageID UPC::ID::KICK_CLIENT = "u149";
+const UPCMessageID UPC::ID::KICK_CLIENT_RESULT = "u150";
+const UPCMessageID UPC::ID::GET_SERVERMODULELIST_SNAPSHOT = "u151";
+const UPCMessageID UPC::ID::SERVERMODULELIST_SNAPSHOT = "u152";
+const UPCMessageID UPC::ID::GET_UPC_STATS_SNAPSHOT = "u154";
+const UPCMessageID UPC::ID::GET_UPC_STATS_SNAPSHOT_RESULT = "u155";
+const UPCMessageID UPC::ID::UPC_STATS_SNAPSHOT = "u156";
+const UPCMessageID UPC::ID::RESET_UPC_STATS = "u157";
+const UPCMessageID UPC::ID::WATCH_FOR_PROCESSED_UPCS_RESULT = "u160";
+const UPCMessageID UPC::ID::CONNECTION_REFUSED = "u164";
+const UPCMessageID UPC::ID::GET_NODELIST_SNAPSHOT = "u165";
+const UPCMessageID UPC::ID::CLEAR_MODULE_CACHE = "u153";
+const UPCMessageID UPC::ID::RESET_UPC_STATS_RESULT = "u158";
+const UPCMessageID UPC::ID::WATCH_FOR_PROCESSED_UPCS = "u159";
+const UPCMessageID UPC::ID::PROCESSED_UPC_ADDED = "u161";
+const UPCMessageID UPC::ID::STOP_WATCHING_FOR_PROCESSED_UPCS = "u162";
+const UPCMessageID UPC::ID::STOP_WATCHING_FOR_PROCESSED_UPCS_RESULT = "u163";
+const UPCMessageID UPC::ID::NODELIST_SNAPSHOT = "u166";
+const UPCMessageID UPC::ID::GET_GATEWAYS_SNAPSHOT = "u167";
+const UPCMessageID UPC::ID::GATEWAYS_SNAPSHOT = "u168";
+
+const char* UPC::Status::ACCOUNT_EXISTS_STR = "ACCOUNT_EXISTS";
+const char* UPC::Status::ACCOUNT_NOT_FOUND_STR = "ACCOUNT_NOT_FOUND";
+const char* UPC::Status::AUTHORIZATION_REQUIRED_STR = "AUTHORIZATION_REQUIRED";
+const char* UPC::Status::AUTHORIZATION_FAILED_STR = "AUTHORIZATION_FAILED";
+const char* UPC::Status::ALREADY_ASSIGNED_STR = "ALREADY_ASSIGNED";
+const char* UPC::Status::ALREADY_BANNED_STR = "ALREADY_BANNED";
+const char* UPC::Status::ALREADY_IN_ROOM_STR = "ALREADY_IN_ROOM";
+const char* UPC::Status::ALREADY_LOGGED_IN_STR = "ALREADY_LOGGED_IN";
+const char* UPC::Status::ALREADY_OBSERVING_STR = "ALREADY_OBSERVING";
+const char* UPC::Status::ALREADY_SYNCHRONIZED_STR = "ALREADY_SYNCHRONIZED";
+const char* UPC::Status::ALREADY_WATCHING_STR = "ALREADY_WATCHING";
+const char* UPC::Status::ATTR_NOT_FOUND_STR = "ATTR_NOT_FOUND";
+const char* UPC::Status::CLIENT_NOT_FOUND_STR = "CLIENT_NOT_FOUND";
+const char* UPC::Status::ERROR_STR = "ERROR";
+const char* UPC::Status::EVALUATION_FAILED_STR = "EVALUATION_FAILED";
+const char* UPC::Status::DUPLICATE_VALUE_STR = "DUPLICATE_VALUE";
+const char* UPC::Status::IMMUTABLE_STR = "IMMUTABLE";
+const char* UPC::Status::INVALID_QUALIFIER_STR = "INVALID_QUALIFIER";
+const char* UPC::Status::NAME_NOT_FOUND_STR = "NAME_NOT_FOUND";
+const char* UPC::Status::NAME_EXISTS_STR = "NAME_EXISTS";
+const char* UPC::Status::NOT_ASSIGNED_STR = "NOT_ASSIGNED";
+const char* UPC::Status::NOT_BANNED_STR = "NOT_BANNED";
+const char* UPC::Status::NOT_IN_ROOM_STR = "NOT_IN_ROOM";
+const char* UPC::Status::NOT_LOGGED_IN_STR = "NOT_LOGGED_IN";
+const char* UPC::Status::NOT_OBSERVING_STR = "NOT_OBSERVING";
+const char* UPC::Status::NOT_WATCHING_STR = "NOT_WATCHING";
+const char* UPC::Status::PERMISSION_DENIED_STR = "PERMISSION_DENIED";
+const char* UPC::Status::REMOVED_STR = "REMOVED";
+const char* UPC::Status::ROLE_NOT_FOUND_STR = "ROLE_NOT_FOUND";
+const char* UPC::Status::ROOM_EXISTS_STR = "ROOM_EXISTS";
+const char* UPC::Status::ROOM_FULL_STR = "ROOM_FULL";
+const char* UPC::Status::ROOM_NOT_FOUND_STR = "ROOM_NOT_FOUND";
+const char* UPC::Status::SERVER_ONLY_STR = "SERVER_ONLY";
+const char* UPC::Status::SUCCESS_STR = "SUCCESS";
+
+/**
+ * convert a string status code, as returned in the xml messages into a numeric one as used internally
+ */
+UPCStatus UPC::Status::GetStatusCode(const char *str)
+{
+	std::string ss(str);
+	if (ss == ACCOUNT_EXISTS_STR) {
+		return ACCOUNT_EXISTS;
+	} else if (ss == ACCOUNT_NOT_FOUND_STR) {
+		return ACCOUNT_NOT_FOUND;
+	} else if (ss == AUTHORIZATION_REQUIRED_STR) {
+		return AUTHORIZATION_REQUIRED;
+	} else if (ss == AUTHORIZATION_FAILED_STR) {
+		return AUTHORIZATION_FAILED;
+	} else if (ss == ALREADY_ASSIGNED_STR) {
+		return ALREADY_ASSIGNED;
+	} else if (ss == ALREADY_BANNED_STR) {
+		return ALREADY_BANNED;
+	} else if (ss == ALREADY_IN_ROOM_STR) {
+		return ALREADY_IN_ROOM;
+	} else if (ss == ALREADY_LOGGED_IN_STR) {
+		return ALREADY_LOGGED_IN;
+	} else if (ss == ALREADY_OBSERVING_STR) {
+		return ALREADY_OBSERVING;
+	} else if (ss == ALREADY_SYNCHRONIZED_STR) {
+		return ALREADY_SYNCHRONIZED;
+	} else if (ss == ALREADY_WATCHING_STR) {
+		return ALREADY_WATCHING;
+	} else if (ss == ATTR_NOT_FOUND_STR) {
+		return ATTR_NOT_FOUND;
+	} else if (ss == CLIENT_NOT_FOUND_STR) {
+		return CLIENT_NOT_FOUND;
+	} else if (ss == ERROR_STR) {
+		return UPC_ERROR;
+	} else if (ss == EVALUATION_FAILED_STR) {
+		return EVALUATION_FAILED;
+	} else if (ss == DUPLICATE_VALUE_STR) {
+		return DUPLICATE_VALUE;
+	} else if (ss == IMMUTABLE_STR) {
+		return IMMUTABLE;
+	} else if (ss == INVALID_QUALIFIER_STR) {
+		return INVALID_QUALIFIER;
+	} else if (ss == NAME_NOT_FOUND_STR) {
+		return NAME_NOT_FOUND;
+	} else if (ss == NAME_EXISTS_STR) {
+		return NAME_EXISTS;
+	} else if (ss == NOT_ASSIGNED_STR) {
+		return NOT_ASSIGNED;
+	} else if (ss == NOT_BANNED_STR) {
+		return NOT_BANNED;
+	} else if (ss == NOT_IN_ROOM_STR) {
+		return NOT_IN_ROOM;
+	} else if (ss == NOT_LOGGED_IN_STR) {
+		return NOT_LOGGED_IN;
+	} else if (ss == NOT_OBSERVING_STR) {
+		return NOT_OBSERVING;
+	} else if (ss == NOT_WATCHING_STR) {
+		return NOT_WATCHING;
+	} else if (ss == PERMISSION_DENIED_STR) {
+		return PERMISSION_DENIED;
+	} else if (ss == REMOVED_STR) {
+		return REMOVED;
+	} else if (ss == ROLE_NOT_FOUND_STR) {
+		return ROLE_NOT_FOUND;
+	} else if (ss == ROOM_EXISTS_STR) {
+		return ROOM_EXISTS;
+	} else if (ss == ROOM_FULL_STR) {
+		return ROOM_FULL;
+	} else if (ss == ROOM_NOT_FOUND_STR) {
+		return ROOM_NOT_FOUND;
+	} else if (ss == SERVER_ONLY_STR) {
+		return SERVER_ONLY;
+	} else if (ss == SUCCESS_STR) {
+		return SUCCESS;
+	}
+	return UNKNOWN_ERROR;
+}
+
+/**
+ * convert a numeric status code as used internally, into a string, as used in the xml messages
+ */
+std::string UPC::Status::GetStatusString(const UPCStatus status)
+{
+	switch (status) {
+	case ACCOUNT_EXISTS: return ACCOUNT_EXISTS_STR;
+	case ACCOUNT_NOT_FOUND: return ACCOUNT_NOT_FOUND_STR;
+	case AUTHORIZATION_REQUIRED: return AUTHORIZATION_REQUIRED_STR;
+	case AUTHORIZATION_FAILED: return AUTHORIZATION_FAILED_STR;
+	case ALREADY_ASSIGNED: return ALREADY_ASSIGNED_STR;
+	case ALREADY_BANNED: return ALREADY_BANNED_STR;
+	case ALREADY_IN_ROOM: return ALREADY_IN_ROOM_STR;
+	case ALREADY_LOGGED_IN: return ALREADY_LOGGED_IN_STR;
+	case ALREADY_OBSERVING: return ALREADY_OBSERVING_STR;
+	case ALREADY_SYNCHRONIZED: return ALREADY_SYNCHRONIZED_STR;
+	case ALREADY_WATCHING: return ALREADY_WATCHING_STR;
+	case ATTR_NOT_FOUND: return ATTR_NOT_FOUND_STR;
+	case CLIENT_NOT_FOUND: return CLIENT_NOT_FOUND_STR;
+	case UPC_ERROR: return ERROR_STR;
+	case EVALUATION_FAILED: return EVALUATION_FAILED_STR;
+	case DUPLICATE_VALUE: return DUPLICATE_VALUE_STR;
+	case IMMUTABLE: return IMMUTABLE_STR;
+	case INVALID_QUALIFIER: return INVALID_QUALIFIER_STR;
+	case NAME_NOT_FOUND: return NAME_NOT_FOUND_STR;
+	case NAME_EXISTS: return NAME_EXISTS_STR;
+	case NOT_ASSIGNED: return NOT_ASSIGNED_STR;
+	case NOT_BANNED: return NOT_BANNED_STR;
+	case NOT_IN_ROOM: return NOT_IN_ROOM_STR;
+	case NOT_LOGGED_IN: return NOT_LOGGED_IN_STR;
+	case NOT_OBSERVING: return NOT_OBSERVING_STR;
+	case NOT_WATCHING: return NOT_WATCHING_STR;
+	case PERMISSION_DENIED: return PERMISSION_DENIED_STR;
+	case REMOVED: return REMOVED_STR;
+	case ROLE_NOT_FOUND: return ROLE_NOT_FOUND_STR;
+	case ROOM_EXISTS: return ROOM_EXISTS_STR;
+	case ROOM_FULL: return ROOM_FULL_STR;
+	case ROOM_NOT_FOUND: return ROOM_NOT_FOUND_STR;
+	case SERVER_ONLY: return SERVER_ONLY_STR;
+	case SUCCESS: return SUCCESS_STR;
+	}
+	return "MAF_ERROR";
+}
