@@ -1,0 +1,9 @@
+/build/
+.gradle/
+Files.cmake
+CMakeLists.txt
+cmake/
+hs_err*
+/doc
+/Debug
+/assets

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/UnionClient"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/UnionClient/Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="UnionClient" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="dll" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968" name="Debug" parent="cdt.managedbuild.config.gnu.cygwin.so.debug">
+					<folderInfo id="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.mingw.base.674705150" name="MinGW GCC" superClass="cdt.managedbuild.toolchain.gnu.mingw.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.PE" id="cdt.managedbuild.target.gnu.platform.mingw.base.1071826277" name="Debug Platform" osList="win32" superClass="cdt.managedbuild.target.gnu.platform.mingw.base"/>
+							<builder buildPath="${workspace_loc:/UnionClient}/Debug" id="cdt.managedbuild.tool.gnu.builder.mingw.base.2094280544" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" superClass="cdt.managedbuild.tool.gnu.builder.mingw.base"/>
+							<tool command="as" id="cdt.managedbuild.tool.gnu.assembler.mingw.base.1822456530" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.mingw.base">
+								<option id="gnu.both.asm.option.include.paths.1888149158" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TinyXML2}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/UnionClient/include}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.298452941" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.mingw.base.1154835133" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.mingw.base"/>
+							<tool command="g++" id="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.167778457" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base">
+								<option id="gnu.cpp.compiler.option.include.paths.1115487148" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="../include"/>
+									<listOptionValue builtIn="false" value="&quot;D:\src\cpp\workspace\UnionClient\src\&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TinyXML2}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/libuv/include}&quot;"/>
+									<listOptionValue builtIn="false" value="/usr/local/include"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.optimization.level.623147761" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.374023601" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.other.other.1918713774" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -std=c++11 -pthread" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.other.verbose.2119611051" name="Verbose (-v)" superClass="gnu.cpp.compiler.option.other.verbose" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.918907870" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.mingw.base.552257971" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.mingw.base">
+								<option id="gnu.c.compiler.option.include.paths.1499316880" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;D:\src\cpp\workspace\TinyXML2&quot;"/>
+								</option>
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1946302363" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.754226817" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1951849358" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.mingw.base.1018070103" name="MinGW C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.mingw.base">
+								<option defaultValue="true" id="gnu.c.link.option.shared.1617984180" name="Shared (-shared)" superClass="gnu.c.link.option.shared" valueType="boolean"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.mingw.base.1448830208" name="MinGW C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.mingw.base">
+								<option id="gnu.cpp.link.option.libs.2123936492" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="tinyxml2"/>
+									<listOptionValue builtIn="false" value="libuv"/>
+								</option>
+								<option id="gnu.cpp.link.option.paths.1840907744" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TinyXML2/Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/libuv/Debug}&quot;"/>
+								</option>
+								<option defaultValue="true" id="gnu.cpp.link.option.shared.131219276" name="Shared (-shared)" superClass="gnu.cpp.link.option.shared" valueType="boolean"/>
+								<option id="gnu.cpp.link.option.flags.2033693589" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-std=c++11 -pthread" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.693826686" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.838764003" name="Notifier0.h" rcbsApplicability="disable" resourcePath="assets/Notifier0.h" toolsToInvoke="">
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1650134479" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1894506089" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1992971306" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.11779083" name="Notifier4.h" rcbsApplicability="disable" resourcePath="assets/Notifier4.h" toolsToInvoke="">
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1470590947" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.970285091" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1658573300" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.1276880731" name="AttributeOwner.h" rcbsApplicability="disable" resourcePath="assets/AttributeOwner.h" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.914544834" name="Notifier2.h" rcbsApplicability="disable" resourcePath="assets/Notifier2.h" toolsToInvoke="">
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1564571367" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1161005639" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1636634032" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.1468336312" name="Notifier1.h" rcbsApplicability="disable" resourcePath="assets/Notifier1.h" toolsToInvoke="">
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1508474183" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1277910012" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1547543605" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.1712866296" name="ClientSet.h" rcbsApplicability="disable" resourcePath="assets/ClientSet.h" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.226993572" name="RoomList.h" rcbsApplicability="disable" resourcePath="assets/RoomList.h" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.2065937806" name="Files.cmake" rcbsApplicability="disable" resourcePath="Files.cmake" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.718758008" name="RoomTest.cpp" rcbsApplicability="disable" resourcePath="test/RoomTest.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.167778457.1158680325">
+						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.167778457.1158680325" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.167778457">
+							<option id="gnu.cpp.compiler.option.include.paths.1443441355" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+								<listOptionValue builtIn="false" value="../include"/>
+								<listOptionValue builtIn="false" value="&quot;D:\src\cpp\library\gtest-1.7.0\include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;D:\src\cpp\workspace\UnionClient\src\&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TinyXML2}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/libuv/include}&quot;"/>
+								<listOptionValue builtIn="false" value="/usr/local/include"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1166840531" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+						</tool>
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1922882912" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1273784894" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1012186545" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.1865990092" name="ConnectionTest.cpp" rcbsApplicability="disable" resourcePath="test/ConnectionTest.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.167778457.875707506">
+						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.167778457.875707506" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.167778457">
+							<option id="gnu.cpp.compiler.option.include.paths.17526510" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+								<listOptionValue builtIn="false" value="../include"/>
+								<listOptionValue builtIn="false" value="&quot;D:\src\cpp\library\gtest-1.7.0\include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;D:\src\cpp\workspace\UnionClient\src\&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TinyXML2}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/libuv/include}&quot;"/>
+								<listOptionValue builtIn="false" value="/usr/local/include"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1623017058" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.874257583" name="CustomBuild.cmake" rcbsApplicability="disable" resourcePath="CustomBuild.cmake" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.151172900" name="CMakeLists.txt" rcbsApplicability="disable" resourcePath="CMakeLists.txt" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.1199125775" name="UVWSConnection.cpp" rcbsApplicability="disable" resourcePath="src/connector/UVWSConnection.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.167778457.594240846">
+						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.167778457.594240846" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.167778457">
+							<option id="gnu.cpp.compiler.option.preprocessor.def.2059465607" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+								<listOptionValue builtIn="false" value="_WIN32"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.214145268" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.760032340" name="UVConnector.cpp" rcbsApplicability="disable" resourcePath="src/connector/UVCnxLayer.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.base.1414836627">
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.953760427" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.636588560" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1872945285" name="Resource Custom Build Step Output Type"/>
+						</tool>
+						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1414836627" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+							<option id="gnu.cpp.compiler.option.optimization.level.772041777" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+							<option id="gnu.cpp.compiler.option.debugging.level.395401639" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+							<option id="gnu.cpp.compiler.option.other.other.2030328439" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -std=c++11 -pthread" valueType="string"/>
+							<option id="gnu.cpp.compiler.option.include.paths.1068493113" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+								<listOptionValue builtIn="false" value="../include"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/libuv/include}&quot;"/>
+							</option>
+							<option id="gnu.cpp.compiler.option.preprocessor.def.1578156462" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+								<listOptionValue builtIn="false" value="_WIN32"/>
+							</option>
+							<option id="gnu.cpp.compiler.option.other.verbose.2085065983" name="Verbose (-v)" superClass="gnu.cpp.compiler.option.other.verbose" value="false" valueType="boolean"/>
+							<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1688814704" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+						</tool>
+					</fileInfo>
+					<sourceEntries>
+						<entry excluding="integration|CustomBuild.cmake|test|src/AttributeOwner.cpp|include/AttributeOwner.h|src/UVLooper.cpp|Files.cmake|CMakeLists.txt|cmake|build|assets|assets/RoomList.cpp|assets/RoomList.h|assets/ClientSet.cpp|assets/ClientSet.h|assets/Notifier1.h|assets/Notifier2.h|assets/Notifier4.h|assets/Notifier0.h" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.gnu.cygwin.so.release.592679223">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.cygwin.so.release.592679223" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/UnionClient"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/UnionClient/Release"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="UnionClient" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.Cygwin_PE" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="dll" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.cygwin.so.release.592679223" name="Release" parent="cdt.managedbuild.config.gnu.cygwin.so.release">
+					<folderInfo id="cdt.managedbuild.config.gnu.cygwin.so.release.592679223." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.cygwin.so.release.1417634520" name="Cygwin GCC" superClass="cdt.managedbuild.toolchain.gnu.cygwin.so.release">
+							<targetPlatform id="cdt.managedbuild.target.gnu.platform.cygwin.so.release.21938695" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.cygwin.so.release"/>
+							<builder buildPath="${workspace_loc:/UnionClient/Release}" id="cdt.managedbuild.target.gnu.builder.cygwin.so.release.1706628326" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.cygwin.so.release"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.cygwin.so.release.1998251886" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cygwin.so.release">
+								<option id="gnu.both.asm.option.include.paths.2029106946" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:D:\src\cpp\workspace\TinyXML2}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.664676862" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.cygwin.base.1711073295" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.cygwin.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.so.release.597533207" name="Cygwin C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.so.release">
+								<option id="gnu.cpp.compiler.cygwin.so.release.option.optimization.level.2084259680" name="Optimization Level" superClass="gnu.cpp.compiler.cygwin.so.release.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.cygwin.so.release.option.debugging.level.1836916889" name="Debug Level" superClass="gnu.cpp.compiler.cygwin.so.release.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1731956247" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__cplusplus=199711L"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.include.paths.1631823868" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:D:\src\cpp\workspace\TinyXML2}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.917173756" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.cygwin.so.release.581495023" name="Cygwin C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cygwin.so.release">
+								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.cygwin.so.release.option.optimization.level.1019487294" name="Optimization Level" superClass="gnu.c.compiler.cygwin.so.release.option.optimization.level" valueType="enumerated"/>
+								<option id="gnu.c.compiler.cygwin.so.release.option.debugging.level.2002256302" name="Debug Level" superClass="gnu.c.compiler.cygwin.so.release.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.1228060062" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:D:\src\cpp\workspace\TinyXML2}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.919830487" superClass="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.cygwin.so.release.1733992015" name="Cygwin C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.cygwin.so.release">
+								<option defaultValue="true" id="gnu.c.link.cygwin.so.release.option.shared.142506628" name="Shared (-shared)" superClass="gnu.c.link.cygwin.so.release.option.shared" valueType="boolean"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.so.release.1899394088" name="Cygwin C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.so.release">
+								<option defaultValue="true" id="gnu.cpp.link.cygwin.so.release.option.shared.223482460" name="Shared (-shared)" superClass="gnu.cpp.link.cygwin.so.release.option.shared" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.584748479" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="UnionClient.cdt.managedbuild.target.gnu.cygwin.so.1180480156" name="Shared Library" projectType="cdt.managedbuild.target.gnu.cygwin.so"/>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/UnionClient"/>
+		</configuration>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/UnionClient"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="0.1996862038">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.so.release.1987030414;cdt.managedbuild.config.gnu.cygwin.so.release.1987030414.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.so.release.279582812;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1038150366">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968;cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.;cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.1648196417;cdt.managedbuild.tool.gnu.cpp.compiler.input.1628894225">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.so.debug.154007218;cdt.managedbuild.config.gnu.cygwin.so.debug.154007218.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.so.debug.230753631;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1766084349">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC"/>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-c 'gcc -E -P -v -dD &quot;${plugin_state_location}/specs.c&quot;' &quot;-std=c++11&quot;" command="sh" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968;cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.;cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.167778457;cdt.managedbuild.tool.gnu.cpp.compiler.input.918907870">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968;cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.so.debug.374234031;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1108345656">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP"/>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-c 'g++ -E -P -v -dD &quot;${plugin_state_location}/specs.cpp&quot;' -std=c++11" command="sh" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968;cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.;cdt.managedbuild.tool.gnu.c.compiler.mingw.base.552257971;cdt.managedbuild.tool.gnu.c.compiler.input.1951849358">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.so.release.592679223;cdt.managedbuild.config.gnu.cygwin.so.release.592679223.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.so.release.581495023;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.919830487">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968;cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.;cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.88849712;cdt.managedbuild.tool.gnu.cpp.compiler.input.2022513391">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968;cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.;cdt.managedbuild.tool.gnu.c.compiler.mingw.base.1504796526;cdt.managedbuild.tool.gnu.c.compiler.input.1162147484">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.so.debug.154007218;cdt.managedbuild.config.gnu.cygwin.so.debug.154007218.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.so.debug.94092653;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.8803570">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.so.release.1987030414;cdt.managedbuild.config.gnu.cygwin.so.release.1987030414.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.so.release.37876245;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.407562761">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968;cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.;cdt.managedbuild.tool.gnu.c.compiler.mingw.base.1528965661;cdt.managedbuild.tool.gnu.c.compiler.input.1519022682">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968;cdt.managedbuild.config.gnu.cygwin.so.debug.2021082968.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.so.debug.1199607431;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.616238350">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.so.release.592679223;cdt.managedbuild.config.gnu.cygwin.so.release.592679223.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.so.release.597533207;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.917173756">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>

@@ -1,0 +1,51 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        mavenLocal()
+        maven {
+            url "http://gusto/artifactory/plugins-release"
+        }
+        maven {
+            url "http://gusto/artifactory/plugins-snapshot"
+        }
+    }
+
+    dependencies {
+        classpath "com.prezi.gradle:gradle-frank-plugin:1.2-76-g8ce0544"
+    }
+}
+
+apply plugin: 'frank'
+
+group 'com.prezi'
+version "0.1.0-SNAPSHOT"
+
+repositories {
+//    ivy preziDownloadRepo("client-tools")
+    ivy {
+        url = "http://gusto/artifactory/plugins-release"
+        layout "maven"
+    }
+}
+
+dependencies {
+    src group: "googlemock", name: "gmock", version: "1.7.0", configuration: "src"
+}
+
+targetPlatforms {
+    osx_x64
+    linux_x64
+    windows_x64
+}
+
+binaryDependencies {
+    all {
+        module group: "tinyxml2", name: "tinyxml2", version: "2.1.0-+"
+    }
+    windows_x64 {
+        module group: "libuv", name: "uv", version: "0.11.25"
+    }
+    osx_x64 {
+        module group: "libuv", name: "uv", version: "0.11.26"
+    }
+}
